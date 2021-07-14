@@ -16,3 +16,56 @@ body{
     align-items: center;
     font-family: Helvetica, sans-serif;
 }
+.fas{
+    color: var(--font-color);
+    font-size: 35px;
+}
+.player{
+    max-width: 80vw;
+    min-width: 800vw;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+}
+
+/* containers */
+.show-controls{
+    width: 100%;
+    height: 30%;
+    background: dodgerblue;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    cursor: default;
+}
+.controls-container{
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 95px;
+    margin-top: -95px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-left,
+.controls-right{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+}
+
