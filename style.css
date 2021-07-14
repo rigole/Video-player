@@ -215,3 +215,19 @@ select > option {
         font-size: 12px;
     }
 }
+
+/* Media Query: Large Smartphone (Horizontal) */
+@media screen and (max-width: 900px) and (max-height: 500px) {
+
+    .player{
+        max-height: 95vh;
+    }
+    video{
+        height: 95vh;
+        object-fit: cover;
+    }
+    .video-fullscreen{
+        height: 97.5vh;
+        border-radius: 0;
+    }
+}
