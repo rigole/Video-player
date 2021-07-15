@@ -39,7 +39,6 @@ video{
 .show-controls{
     width: 100%;
     height: 30%;
-    background: dodgerblue;
     z-index: 2;
     position: absolute;
     bottom: 0;
@@ -82,7 +81,7 @@ video{
 /* Progress Bar */
 .progress-range {
     height: 8px;
-    width: 100%;
+    width: calc(100% - 30px);
     background: rgba(202, 202, 202, 0.5);
     margin: auto;
     border-radius: 10px;
@@ -90,6 +89,11 @@ video{
     left: 15px;
     top: 15px;
     cursor: pointer;
+    transition: height 0.1s ease-in-out;
+}
+
+.progress-range:hover{
+    height: 10px;
 }
 
 .progress-bar {
